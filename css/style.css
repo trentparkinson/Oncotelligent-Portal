@@ -1,0 +1,212 @@
+html {
+	height: 98%;
+}
+
+
+body {
+	background-color: #e8e8e8;
+	font-family: "Oxygen", sans-serif;
+	height: 98%;
+}
+
+
+
+.sideright {
+	height: 96.9vh;
+	width: 300px;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	border: 1px gray solid;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right:8%;
+}
+
+.sideright h2, h4 {
+	color:#435061;
+}
+
+#questions h2, h3, h4 {
+	color:#435061;
+}
+
+#main {
+	width: calc(84% - 320px);
+	max-width: 950px;
+	border: 1px gray solid;
+	margin-top:10px;
+	margin-right:calc(8% + 310px);
+	margin-left:8%;
+	padding: 0px 10px;
+	padding-right:10px;
+	background-color: white;
+	border-radius: 15px;
+	position: relative;
+}
+
+#form1 {
+	min-height: 448px;
+}
+
+#questions {
+	min-height: 375px;
+}
+
+@media (max-width: 768px) {
+    .sideright {
+        display: none;
+    }
+	
+	#main {
+		width: calc(100% - 20px);
+		border: 1px gray solid;
+		margin-top:10px;
+		margin-right:10px;
+		margin-left:10px;
+		padding: 0px 10px;
+		padding-right:10px;
+		margin-bottom:10px;
+		background-color: white;
+		border-radius: 15px;
+		position: absolute;
+	}
+	
+}
+
+@media (max-width: 1275px) and (min-width: 767px){
+    .sideright {
+        margin-right:10px;
+    }
+	
+	#main {
+		width: calc(100% - 340px);
+		border: 1px gray solid;
+		margin-top:10px;
+		margin-right:10px;
+		margin-left:10px;
+		padding: 0px 10px;
+		padding-right:10px;
+		background-color: white;
+		border-radius: 15px;
+		position: absolute;
+	}
+	
+}
+
+
+#main > div {
+    width: 100%;
+    min-height: 100%;
+}
+
+#header {
+	margin-top: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	height: 250px;
+	background: beige;
+	background-image: url("../images/everyone-likes-freedom-1024x344.png");
+	color: black;
+	border-radius: 15px;
+}
+
+label {
+	display: block;
+}
+
+h2 {
+	clear: both;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+h1 {
+	clear: both;
+	margin-top: 5px;
+}
+
+.fi-male-female {
+   font-size: 26px
+}
+
+.placeholder{
+	color: grey;
+}
+
+select option:first-child{
+	color: grey;
+	display: none;
+}
+
+select option{
+	color: #555;
+} // bootstrap default color
+
+#next {
+  border-radius: 10px;
+}
+
+#question-buttons {
+  padding-bottom: 10px;
+}
+
+#personal_footer {
+	position:absolute;
+    bottom:0;
+	width: calc(100% - 28px);
+	text-align: center;
+}
+
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: #a94442;
+	margin-left: 10px;
+}
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+#contact_gender.invalid{
+	border: 2px solid red;
+}
+#contact_gender.valid{
+	border: 2px solid green;
+}
+#contact_country.invalid{
+	border: 2px solid red;
+}
+#contact_country.valid{
+	border: 2px solid green;
+}
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
+.input-group-addon{
+max-height: 50px;
+height: 50px;
+}
+.error_align_na {
+	color: #a94442;
+	position: absolute;
+	width: 100%;
+	line-height: 34px;
+	margin-left: -50%;
+	margin-top: -8px;
+}
+.error_align_ic {
+	color: #a94442;
+	position: absolute;
+	width: 100%;
+	line-height: 34px;
+	margin-left: -90%;
+	margin-top: 43px;
+}
