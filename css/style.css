@@ -105,6 +105,14 @@ body {
 		position: absolute;
 	}
 	
+	#form1 {
+		min-height: 853px;
+}
+
+	#questions {
+		min-height: 830px;
+	}
+	
 }
 
 
