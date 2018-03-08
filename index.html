@@ -17,7 +17,7 @@
 
 <div class="sideright">
 	<img src="images/oncotelligent_logo.PNG" alt="Oncotelligent Logo" width="90%" align="center"/>
-	<img src="images/smarter_than_cancer_black.png" alt="Oncotelligent Logo" width="70%" align="center" />
+	<img src="images/smarter_than_cancer_black.PNG" alt="Oncotelligent Logo" width="70%" align="center" />
 	<br/>
 	<br/>
 	<br/>
@@ -118,7 +118,7 @@
 								<div class="input-group-addon">
 									<i class="fi-male-female"></i>
 								</div>
-								<select class="form-control placeholder" type="text" id="contact_gender" name="gender">
+								<select class="form-control placeholder" type="text" id="contact_gender" name="gender" required>
 									<option value="">Gender</option>
 									<option value="Male">Male</option>
 									<option value="Female">Female</option>
@@ -160,7 +160,7 @@
 								<div class="input-group-addon">
 									<i class="fa fa-globe fa-2x"></i>
 								</div>
-								<select class="form-control" type="text" id="contact_country" name="country">
+								<select class="form-control" type="text" id="contact_country" name="country" required>
 									<option value="" selected>Select a country...</option>
 									<option value="AFG">Afghanistan</option>
 									<option value="ALA">Åland Islands</option>
@@ -442,6 +442,12 @@
 				<hr style="border:solid 0.5px; color:#435061;"/>
 				<br/>
 				</div>
+				<div class="form-group">
+					<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Identifies a portion of a string.</label>
+					<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />A method to join strings.</label>
+					<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Allows you to store information so it can be reused throughout the program</label>
+					<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Allows you to make a decision based on a condition.</label>
+				</div>
 			</div> <!-- End of question3 -->
 			<div id="question4" class="question">
 				<div class="row">
@@ -464,15 +470,15 @@
 				<br/>
 				</div>
 			</div> <!-- End of question6 -->
-			<div id="question-buttons" class="button-container" align="center">
+			<div class="button-container" id="question-buttons">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-md-push-3">
 						<button type="button" id="previous" class ="btn btn-primary btn-modify" >Previous</button>
 					</div>
-					<div class="col-md-3 col-md-push-4">
+					<div class="col-md-3 col-md-push-3">
 						<button type="button" id="next" class ="btn btn-primary btn-modify">Next</button>
 					</div>
-					<div class="col-md-3 col-md-push-5">
+					<div class="col-md-3 col-md-push-2">
 						<input type="submit" id="submit" value="Submit" class="btn btn-primary btn-modify-submit" />
 					</div>
 				</div>

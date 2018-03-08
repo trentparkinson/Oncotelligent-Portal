@@ -63,7 +63,7 @@
 	});
 	// After Form Submitted Validation
 	$("#next").click(function(event){
-		var form_data=$('div :input').serializeArray();
+		var form_data=$('#question1 :input').serializeArray();
 		var error_free=true;
 		for (var input in form_data){
 			var element=$("#contact_"+form_data[input]['name']);

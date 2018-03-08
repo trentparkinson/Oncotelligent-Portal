@@ -55,7 +55,7 @@ body {
 }
 
 #questions {
-	min-height: 375px;
+	min-height: 425px;
 }
 
 @media (max-width: 768px) {
@@ -75,6 +75,14 @@ body {
 		background-color: white;
 		border-radius: 15px;
 		position: absolute;
+	}
+	
+	#form1 {
+		min-height: 853px;
+}
+
+	#questions {
+		min-height: 830px;
 	}
 	
 }
@@ -135,25 +143,35 @@ h1 {
    font-size: 26px
 }
 
-.placeholder{
-	color: grey;
-}
-
 select option:first-child{
-	color: grey;
 	display: none;
 }
 
-select option{
-	color: #555;
-} // bootstrap default color
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
+}
 
 #next {
   border-radius: 10px;
 }
 
 #question-buttons {
-  padding-bottom: 10px;
+  position:absolute;
+  bottom:-15px;
+  width: 100%;
+  padding-left: 10px;
+
 }
 
 #personal_footer {
